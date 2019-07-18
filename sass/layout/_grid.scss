@@ -1,72 +1,89 @@
 .container{
     width: 1140px;
-    background: red;
-    height: 50px;
     margin: 0 auto;
 }
 
 .col{
-
-    &-1, &-2, &-11{
-        height: 20px;
-    }
-
     &-row{
         width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         flex-wrap: wrap;
+        margin: 0 -10px;
     }    
 
     &-1{
        width: calc(100% / 12);
-       background: blue;
+       padding: 0 10px;
     }
 
     &-2{
         width: calc(100% / 6);
-        background: purple;
+        padding: 0 10px;
     }
 
     &-3{
         width: calc(100% / 4);
+        padding: 0 10px;
     }
 
     &-4{
         width: calc(100% / 3);
+        padding: 0 10px;
     }
 
     &-5{
         width: calc((100% / 12) * 5);
+        padding: 0 10px;
     }
 
     &-6{
         width: calc(100% / 2);
+        padding: 0 10px;
     }
 
     &-7{
         width: calc((100% / 12) *7);
+        padding: 0 10px;
     }
 
     &-8{
         width: calc((100% / 12) *8);
+        padding: 0 10px;
     }
 
     &-9{
         width: calc((100% / 12) *9);
+        padding: 0 10px;
     }
 
     &-10{
         width: calc((100% / 12) *10);
+        padding: 0 10px;
     }
 
     &-11{
         width: calc((100% / 12) *11);
-        background: green;
+        padding: 0 10px;
     }
 
     &-12{
         width: calc(100%);
+        padding: 0 10px;
+    }
+}
+
+.align-items{
+    &-start{
+        align-items: flex-start;
+    }
+
+    &-center{
+        align-items: center;
+    }
+
+    &-end{
+        align-items: flex-end;
     }
 }

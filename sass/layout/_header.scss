@@ -1,0 +1,23 @@
+header{
+    padding: 20px 0;
+    border-bottom: 1px solid $border-color;
+}
+
+.logo{
+    & img{
+        height: 56px;
+        object-fit: contain;
+    }
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &-button{
+        & img{
+            height: 25px;
+        }
+    }
+}
