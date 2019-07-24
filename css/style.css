@@ -220,7 +220,6 @@ a {
   margin: 0 auto; }
 
 .col-row {
-  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -330,3 +329,73 @@ header {
 
 .posts {
   padding: 50px 0; }
+
+.hot-news {
+  padding: 30px 0; }
+  .hot-news__item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden; }
+    .hot-news__item::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      height: 100%;
+      width: 100%;
+      z-index: 4;
+      background: linear-gradient(180deg, rgba(239, 240, 240, 0) 23.76%, rgba(239, 240, 240, 0.91) 89.5%, rgba(239, 240, 240, 0.93) 96.69%); }
+    .hot-news__item-big {
+      height: 420px; }
+    .hot-news__item-medium {
+      height: 200px;
+      margin-bottom: 20px; }
+    .hot-news__item-small {
+      height: 200px; }
+      .hot-news__item-small .hot-news__item--title {
+        font-size: 16px;
+        line-height: 20px; }
+      .hot-news__item-small .hot-news__item--content {
+        padding: 10px 15px; }
+    .hot-news__item--image {
+      height: 100%;
+      width: 100%; }
+      .hot-news__item--image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+    .hot-news__item--content {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+      padding: 20px 40px; }
+    .hot-news__item--title {
+      font-weight: bold;
+      font-size: 21px;
+      line-height: 26px;
+      color: #000; }
+    .hot-news__item--meta {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 15px; }
+      .hot-news__item--meta-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-weight: 900;
+        font-size: 13px;
+        color: #000; }
+        .hot-news__item--meta-item:not(:first-child) {
+          margin-left: 10px; }
+        .hot-news__item--meta-item img {
+          height: 20px;
+          object-fit: contain;
+          margin-right: 5px; }
+
+.home-ads {
+  height: 200px; }
+  .home-ads .ads {
+    height: 200px; }
