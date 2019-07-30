@@ -2,11 +2,20 @@
     padding: 40px 0;
     border-bottom: 1px solid $border-color;
 
-
     &__item{
         display: flex;
         align-items: center;
         justify-content: flex-start;
+
+        margin-bottom: 20px;
+
+        @include display(tablet){
+            margin-bottom: 0;
+        }
+
+        // @include display(phone-tablet){
+        //     margin-bottom: 20px;
+        // }
 
         &-left{
             width: 73px;
